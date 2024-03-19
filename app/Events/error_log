@@ -1,0 +1,5 @@
+[19-Mar-2023 19:23:36 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Events\Dispatchable" not found in /home/hapiverse/public_html/hapiverse/app/Events/MakeAgoraCall.php on line 11
+[12-Apr-2023 06:21:55 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Events\Dispatchable" not found in /home/hapiverse/public_html/hapiverse/app/Events/MakeAgoraCall.php on line 11
+[10-May-2023 09:44:58 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Events\Dispatchable" not found in /home/hapiverse/public_html/hapiverse/app/Events/MakeAgoraCall.php on line 11
+[04-Jun-2023 13:40:23 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Events\Dispatchable" not found in /home/hapiverse/public_html/hapiverse/app/Events/MakeAgoraCall.php on line 11
+[02-Jul-2023 22:01:53 UTC] PHP Fatal error:  Trait "Illuminate\Foundation\Events\Dispatchable" not found in /home/hapiverse/public_html/hapiverse/app/Events/MakeAgoraCall.php on line 11

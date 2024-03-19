@@ -1,0 +1,2 @@
+[07-Jun-2023 13:57:55 UTC] PHP Warning:  Undefined variable $isPrivate in /home/hapiverse/public_html/hapiverse/resources/views/users/account-settings.blade.php on line 28
+[02-Jul-2023 18:30:57 UTC] PHP Warning:  Undefined variable $isPrivate in /home/hapiverse/public_html/hapiverse/resources/views/users/account-settings.blade.php on line 28

@@ -1,0 +1,120 @@
+[18-Mar-2023 08:57:15 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php on line 8
+[18-Mar-2023 21:01:10 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php on line 7
+[19-Mar-2023 19:51:32 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php on line 8
+[21-Mar-2023 03:22:35 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php on line 8
+[21-Mar-2023 03:23:28 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php on line 8
+[21-Mar-2023 03:24:15 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php on line 8
+[12-Apr-2023 06:06:25 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php on line 8
+[12-Apr-2023 13:57:03 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php on line 7
+[13-Apr-2023 10:26:32 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php on line 8
+[15-Apr-2023 04:47:05 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php on line 8
+[15-Apr-2023 04:47:06 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php on line 8
+[15-Apr-2023 04:47:07 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php on line 8
+[10-May-2023 03:15:36 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php on line 8
+[10-May-2023 11:34:54 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php on line 7
+[10-May-2023 23:14:26 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php on line 8
+[14-May-2023 08:11:11 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php on line 8
+[14-May-2023 08:16:26 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php on line 8
+[14-May-2023 08:20:59 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php on line 8
+[05-Jun-2023 01:53:35 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php on line 8
+[05-Jun-2023 04:02:27 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php on line 7
+[05-Jun-2023 17:11:30 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php on line 8
+[10-Jun-2023 02:02:14 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php on line 8
+[10-Jun-2023 02:02:14 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php on line 8
+[10-Jun-2023 02:02:19 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php on line 8
+[03-Jul-2023 11:39:52 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MoviesViewModel.php on line 8
+[03-Jul-2023 12:30:18 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorsViewModel.php on line 7
+[03-Jul-2023 19:09:12 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvShowViewModel.php on line 8
+[08-Jul-2023 16:01:36 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/ActorViewModel.php on line 8
+[08-Jul-2023 16:03:09 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/MovieViewModel.php on line 8
+[08-Jul-2023 16:05:11 UTC] PHP Fatal error:  Uncaught Error: Class "Spatie\ViewModels\ViewModel" not found in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/ViewModels/TvViewModel.php on line 8

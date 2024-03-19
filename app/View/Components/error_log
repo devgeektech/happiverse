@@ -1,0 +1,40 @@
+[20-Mar-2023 06:40:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php on line 7
+[20-Mar-2023 06:40:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php on line 7
+[13-Apr-2023 09:27:19 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php on line 7
+[13-Apr-2023 09:31:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php on line 7
+[10-May-2023 20:02:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php on line 7
+[10-May-2023 20:07:57 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php on line 7
+[04-Jun-2023 23:08:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php on line 7
+[04-Jun-2023 23:09:45 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php on line 7
+[03-Jul-2023 11:02:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/MovieCard.php on line 7
+[03-Jul-2023 11:03:53 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\View\Component" not found in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/View/Components/TvCard.php on line 7

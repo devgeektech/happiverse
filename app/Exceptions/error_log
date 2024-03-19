@@ -1,0 +1,20 @@
+[13-Mar-2023 17:53:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php on line 8
+[06-Apr-2023 10:27:01 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php on line 8
+[08-May-2023 15:41:38 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php on line 8
+[04-Jun-2023 18:01:46 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php on line 8
+[01-Jul-2023 11:27:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Exceptions\Handler" not found in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Exceptions/Handler.php on line 8

@@ -1,0 +1,8 @@
+[13-Jun-2023 22:33:55 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/hapiverse/public_html/hapiverse/resources/views/business/HomeController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/resources/views/business/HomeController.php on line 12
+[16-Jul-2023 03:54:26 UTC] PHP Fatal error:  Uncaught Error: Class "App\Http\Controllers\Controller" not found in /home/hapiverse/public_html/hapiverse/resources/views/business/HomeController.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/resources/views/business/HomeController.php on line 12

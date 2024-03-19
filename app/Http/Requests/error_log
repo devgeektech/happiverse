@@ -1,0 +1,140 @@
+[21-Mar-2023 09:24:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php on line 7
+[21-Mar-2023 09:24:36 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php on line 7
+[21-Mar-2023 13:31:23 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php on line 7
+[22-Mar-2023 00:35:35 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php on line 8
+[22-Mar-2023 00:44:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php on line 7
+[22-Mar-2023 00:53:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php on line 7
+[22-Mar-2023 01:02:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php on line 7
+[16-Apr-2023 01:10:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php on line 7
+[16-Apr-2023 01:14:39 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php on line 7
+[16-Apr-2023 04:20:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php on line 7
+[17-Apr-2023 10:37:34 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php on line 8
+[17-Apr-2023 10:50:42 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php on line 7
+[17-Apr-2023 10:57:02 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php on line 7
+[17-Apr-2023 12:08:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php on line 7
+[15-May-2023 04:35:18 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php on line 7
+[15-May-2023 05:28:28 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php on line 7
+[15-May-2023 05:34:10 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php on line 7
+[16-May-2023 01:50:08 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php on line 8
+[16-May-2023 02:02:12 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php on line 7
+[16-May-2023 02:06:37 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php on line 7
+[16-May-2023 02:23:05 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php on line 7
+[11-Jun-2023 06:08:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php on line 7
+[11-Jun-2023 10:35:47 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php on line 7
+[11-Jun-2023 10:35:48 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php on line 7
+[12-Jun-2023 03:33:59 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php on line 8
+[12-Jun-2023 03:34:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php on line 7
+[12-Jun-2023 03:34:11 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php on line 7
+[12-Jun-2023 03:34:16 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php on line 7
+[09-Jul-2023 14:16:21 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateMenuRequest.php on line 7
+[09-Jul-2023 19:36:52 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreBusinessUser.php on line 7
+[09-Jul-2023 19:44:04 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/UpdateUserRequest.php on line 7
+[10-Jul-2023 09:29:49 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/LoginRequest.php on line 8
+[10-Jul-2023 09:30:24 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/RegisterRequest.php on line 7
+[10-Jul-2023 09:31:06 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreMenuRequest.php on line 7
+[10-Jul-2023 09:31:43 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Foundation\Http\FormRequest" not found in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/hapiverse/public_html/hapiverse/app/Http/Requests/StoreUserRequest.php on line 7
