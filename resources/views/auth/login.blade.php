@@ -13,7 +13,7 @@
     </div>
     <div class="form-group">
         <div class="d-flex justify-content-between">
-            <label for="login-password">Password</label><a href="page-auth-forgot-password-v2.html"><small>Forgot Password?</small></a>
+            <label for="login-password">Password</label><a href="{{route('forget.password.get')}}"><small>Forgot Password?</small></a>
         </div>
         <div class="input-group input-group-merge form-password-toggle">
             <input class="form-control form-control-merge" type="password" name="password" value="{{ old('password') }}" required="required" placeholder="Password" aria-describedby="login-password" tabindex="2" />

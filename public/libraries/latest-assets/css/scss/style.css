@@ -373,9 +373,6 @@ body .card .form-control {
 body .card .form-control::-moz-placeholder {
   color: #a4b6e1;
 }
-body .card .form-control:-ms-input-placeholder {
-  color: #a4b6e1;
-}
 body .card .form-control::placeholder {
   color: #a4b6e1;
 }
@@ -501,7 +498,6 @@ body .post-card .card-footer .action-center .icons-wrapper .list-item a.heart:ho
   fill: #ff163f !important;
 }
 body .sticky-card {
-  position: -webkit-sticky;
   position: sticky;
   top: 95px;
   left: 15px;
@@ -709,7 +705,7 @@ body .group-banner .add-btn {
     font-size: 14px;
   }
   body .post-card .card-footer .action-center .icons-wrapper .list-item a:focus,
-body .post-card .card-footer .action-center .icons-wrapper .list-item a svg {
+  body .post-card .card-footer .action-center .icons-wrapper .list-item a svg {
     width: 20px;
     height: 20px;
   }

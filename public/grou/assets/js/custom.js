@@ -395,7 +395,7 @@ $(document).ready(function () {
     $("#searchResultBox").addClass("d-block");
     $(this).parent().addClass("active");
   });
-  $("#userImgDropdown").on("click", function () {
+  $(document).on("click", "#userImgDropdown" , function () {
     console.log("Here I am 2");
     setTimeout(function(){
       $("#userDropdown").addClass("d-block");

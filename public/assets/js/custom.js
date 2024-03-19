@@ -1,5 +1,19 @@
 $(document).ready(function () {
 
+    $(document).on("click", "#userImgDropdown", function () {
+        setTimeout(function () {
+            $("#userDropdown").addClass("d-block");
+        }, 100);
+    });
+
+    $(document).on("click", function(event) {
+        if (!$(event.target).closest('#userDropdown').length && !$(event.target).is('#userImgDropdown')) {
+            $("#userDropdown").removeClass("d-block");
+        }
+    });
+
+
+
   $(window).scroll(function () {
     if ($(this).scrollTop() === 0) {
       $(".header").removeClass("active");
@@ -405,12 +419,8 @@ $(document).ready(function () {
     $("#searchResultBox").addClass("d-block");
     $(this).parent().addClass("active");
   });
-  $("#userImgDropdown").on("click", function () {
-    console.log("Here I am 1");
-    setTimeout(function () {
-      $("#userDropdown").addClass("d-block");
-    }, 100);
-  });
+
+
   $("#chatIcon").on("click", function () {
     setTimeout(function () {
       $("#chatBox").addClass("d-block");

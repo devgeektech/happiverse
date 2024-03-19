@@ -3496,24 +3496,26 @@ body .form-wrapper .stepwizard .stepwizard-step button[disabled] {
   body .music-card .tracks-list .track-item .track-details .track-title {
     font-size: 12px;
   }
-}/*# sourceMappingURL=style.css.map */
+}
 
 .story-slider {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    max-width: 1200px;
-    overflow-x: auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
 }
-.inr-user-icons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
+.story-slider div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
 }
-  .story-slider {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}
+
+.story-slider {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */
+
+
+

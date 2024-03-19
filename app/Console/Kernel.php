@@ -4,7 +4,9 @@ namespace App\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
-
+use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 class Kernel extends ConsoleKernel
 {
     /**
@@ -15,7 +17,21 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
+        $schedule->call(function () {
+            try {
+                $posts = DB::table('mstpost')->where('content_type', 'story')->get();
+                foreach ($posts as $post) {
+                    $postedDate = Carbon::parse($post->posted_date);
+                    $twentyFourHoursAgo = Carbon::now()->subHours(24);
+                    if ($postedDate <= $twentyFourHoursAgo) {
+                        DB::table('mstpost')->where('postId', $post->postId)->delete();
+                        Log::info('Story Deleted: ' . $post->postId);
+                    }
+                }
+            } catch (\Exception $e) {
+                Log::error('Error executing scheduled task: ' . $e->getMessage());
+            }
+        })->everyMinute();
     }
 
     /**
@@ -29,4 +45,5 @@ class Kernel extends ConsoleKernel
 
         require base_path('routes/console.php');
     }
+
 }

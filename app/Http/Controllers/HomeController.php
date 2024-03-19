@@ -95,9 +95,7 @@ class HomeController extends Controller
 
                 $artilces .= '"></a>
                 <ul class="dropdown-menu dropdown-menu-end">
-                <li><button class="dropdown-item" type="button">Action</button></li>
-                <li><button class="dropdown-item" type="button">Another action</button></li>
-                <li><button class="dropdown-item" type="button">Something else here</button></li>
+                <li><a href="' . url("/post/Delete/" . $result->postId) . '" class="dropdown-item" type="button">Delete</a></li>
               </ul>
               </div>
                 </div>
@@ -120,7 +118,7 @@ class HomeController extends Controller
                 $artilces .= ' <div style = " width : 100%; height:100%; min-height: 500px; background-size:cover; background-image: url(';
 
                         $artilces .= $result->text_back_ground;
-                        $artilces .=   ' ) "class ="card-img"><div style = "color:grey;position: absolute; top: 50%;
+                        $artilces .=   ' ) "class ="card-img"><div style = "color:white;position: absolute; top: 50%;
     left: 50%; transform: translate(-50%, -50%); text-align: center; font-size: 22px;">';
                       $artilces .= $result->caption;
                     $artilces .= '</div></div>';

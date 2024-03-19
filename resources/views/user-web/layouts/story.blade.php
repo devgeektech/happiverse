@@ -27,11 +27,11 @@ $profileUrl='http://127.0.0.1:8000/'.$profileImage;
             }
 
             @endphp
-            <div>
+            <div class="inr-user-icons">
                 <a href="{{route('story-detail',$userId ?? '')}}" class="slider-item active">
                     <img src="{{'http://127.0.0.1:8000/'.$url ?? ''}}" alt="">
                 </a>
-                <p class="time">{{\Carbon\Carbon::parse($story->first()->posted_date)->diffForhumans()}}</p>
+                <!-- <p class="time">{{\Carbon\Carbon::parse($story->first()->posted_date)->diffForhumans()}}</p> -->
             </div>
             @endforeach
         </div>

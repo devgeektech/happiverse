@@ -661,29 +661,6 @@ body .chat-dropdown .chat-box .chats::-webkit-scrollbar-thumb {
 body .chat-dropdown .chat-box .chats::-webkit-scrollbar-thumb:hover {
   background-color: #a4b6e1;
 }
-body .chat-dropdown .chat-box .chats .list-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-body .chat-dropdown .chat-box .chats .list-item:hover {
-  background-color: rgba(243, 245, 247, 0.8);
-  border-radius: 10px;
-}
-body .chat-dropdown .chat-box .chats .list-item i {
-  font-size: 12px;
-  color: #8b93a8;
-}
-body .chat-dropdown .chat-box .chats .list-item > a {
-  width: 100%;
-}
-body .chat-dropdown .chat-box .chats .list-item > a:hover {
-  background-color: transparent;
-}
-body .chat-dropdown .chat-box .chats .list-item .dropdown button {
-  border: none;
-  background-color: transparent;
-}
 body .notification-dropdown {
   position: relative;
 }
@@ -1008,14 +985,11 @@ body .card .card-footer {
   border-top: none;
   background-color: unset;
 }
-body .card .side-menu {
-  padding: 12px;
-}
 body .card .side-menu li button,
 body .card .side-menu li a {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  padding: 12px;
+  padding: 12px 24px;
   color: #25396f;
   background-color: #fff;
   border-radius: 0;
@@ -1023,16 +997,16 @@ body .card .side-menu li a {
   border: none;
   width: 100%;
   text-align: start;
-  border-radius: 10px;
 }
 body .card .side-menu li button:hover,
 body .card .side-menu li a:hover {
-  background-color: rgba(243, 245, 247, 0.8);
-  color: #caaf66;
+  background-color: #fff;
+  box-shadow: 0 10px 15px rgba(164, 182, 225, 0.1);
+  transform: scale(1.01) translateX(2px);
 }
 body .card .side-menu li a.active {
-  color: #caaf66;
-  background-color: rgba(243, 245, 247, 0.8);
+  color: #25396f;
+  box-shadow: 0 10px 10px rgba(164, 182, 225, 0.1);
 }
 body .card .side-menu li:last-child a {
   border-radius: 0 0 34px 34px;
@@ -2207,14 +2181,9 @@ body .message-wrapper .card .message-control {
   font-size: 16px;
   color: #8b93a8;
   border-radius: 50px;
-  background-color: transparent;
-  border: none;
 }
 body .message-wrapper .card .message-control:hover {
-  color: #caaf66;
-}
-body .message-wrapper .card .aks-file-upload-label {
-  display: none;
+  color: #25396f;
 }
 body .message-wrapper .card textarea {
   overflow-y: auto !important;
@@ -3497,23 +3466,3 @@ body .form-wrapper .stepwizard .stepwizard-step button[disabled] {
     font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
-
-.story-slider {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-    max-width: 1200px;
-    overflow-x: auto;
-}
-.inr-user-icons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-        align-items: center;
-}
-  .story-slider {
-    display: flex;
-    align-items: flex-start;
-    gap: 10px;
-}

@@ -483,9 +483,9 @@ $friendDetail = [];
             </div>
 
             <div class="user-controls">
-                <a id="userImgDropdown" href="javascrip:void(0)" class="user-img online">
+                <span id="userImgDropdown" href="" class="user-img online" style="cursor:pointer">
                     <img src="{{$profileUrl}}" alt="">
-                </a>
+                </span>
                 <div id="userDropdown" class="custom-user-dropdown">
                     <div class="card">
                         <div class="card-body">

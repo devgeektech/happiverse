@@ -41,21 +41,21 @@ class PostController extends Controller
 
     public function store(Request $request)
     {
-      
+
         $user = \Auth::user();
-        
+
         if($user->userTypeId==2){
             $userId = $user->getBusinessDetail->businessId;
         }else{
-            $userId = $user->getUserDetail->userId;    
+            $userId = $user->getUserDetail->userId;
         }
-        
+
         $postType = "text";
         $fileName = '';
-       
-       
+
+
         if (!empty($request->image)) {
-         
+
             if ($request->hasFile('image')) {
                 // $target_dir = "postdoc/";
                 // $target_file = "../".$target_dir . basename($_FILES["image"]["name"]);
@@ -67,15 +67,15 @@ class PostController extends Controller
                      $postType = "image";
                 }
 
-               
+
                 $file = $request->file('image');
-               
+
                 $fileName = time() . '.' . $request->image->extension();
-              
+
                 $url = $request->image->move('postdoc', $fileName);
                 // $url  = $request->image->move(public_path('postdoc'), $fileName);
                 $request->background_image = null;
-                
+
                 $post = Post::create([
                     'caption' => $request->caption,
                     'postType' => $postType,
@@ -100,13 +100,13 @@ class PostController extends Controller
                 ]);
             }
         }elseif (!empty($request->video)) {
-           
+
                 $postType = "video";
                 $fileName =$request->video->getClientOriginalName();
 
 
                 $url = $request->video->move('postdoc', $fileName);
-                
+
                   $post = Post::create([
             'caption' => $request->caption,
             'postType' => $postType,
@@ -129,10 +129,10 @@ class PostController extends Controller
                     'postFileUrl' => 'postdoc/' . $fileName,
                     'background_images' => $request->background_image
                 ]);
-            
+
         }
         elseif (!empty($request->background_image)) {
-           
+
             $post = Post::create([
             'caption' => $request->caption,
             'postType' => $postType,
@@ -151,7 +151,7 @@ class PostController extends Controller
         }
 
       else{
-       
+
         $post = Post::create([
             'caption' => $request->caption,
             'postType' => $postType,
@@ -169,16 +169,16 @@ class PostController extends Controller
         ]);
 
     }
-        
+
         // dd($request->background_image);
-     
+
         return redirect()->back();
-        
+
          return response()->json(['success' => true]);
     }
     public function addComment(Request $request, $postId)
     {
-        
+
         $user = \Auth::user();
         $posts = Post::where('postId',$postId)->get();
         $request->validate([
@@ -191,15 +191,15 @@ class PostController extends Controller
             $userId = $user->getBusinessDetail->businessId;
             $userName = $user->getBusinessDetail->businessName;
         }else{
-            $userId = $user->getUserDetail->userId;  
-            $userName = $user->getUserDetail->userName; 
+            $userId = $user->getUserDetail->userId;
+            $userName = $user->getUserDetail->userName;
         }
          Comment::create([
-           
+
             'userId' =>$userId,
             'comment' => $request->comment,
             'postId' =>  $postId
-           
+
         ]);
          Notifications::create(['senderId' => $userId, 'receiverId' => $receiverId, 'notificationTypeId' => 2,'subject' => $userName , "body" => "commented on  your post","id"=>$postId]);
 
@@ -213,40 +213,29 @@ class PostController extends Controller
         foreach($posts as $post){
             $receiverId = $post->userId;
         }
-     
          if(Auth::User()->userTypeId==1){
             $loggedIn = Auth::user()->getUserDetail->userId;
             $loggedInName = Auth::user()->getUserDetail->userName;
-        
-          
         }else{
             $loggedIn = Auth::user()->getBusinessDetail->businessId;
             $loggedInName = Auth::user()->getUserDetail->businessName;
-            
         }
         $checkLiked = PostLike::where('userId', $loggedIn)->where('postId', $postId)->first();
-        
-        
         if (empty($checkLiked)) {
             PostLike::create(['userId' => $loggedIn, 'postId' => $postId, 'likeType' => 1]);
             $output= PostLike::where('postId', $postId)->get();
             foreach ($output as $like) {
-                $artilces .= '
-                <span class="list-item"><img src="http://127.0.0.1:8000/';
+                $artilces .= '<span class="list-item"><img src="http://127.0.0.1:8000/';
                 if(Auth::User()->userTypeId==1){
-                //   . $like->user->profileImageUrl??''
-                  $artilces .=$like->user->profileImageUrl??'' ; 
+                  $artilces .=$like->user->profileImageUrl??'' ;
                 }
                 else{
-                    $artilces .=$like->business->logoImageUrl??'' ; 
+                    $artilces .=$like->business->logoImageUrl??'' ;
                 }
-                
-                $artilces .= '" alt=""></span>
-            ';
+                $artilces .= '" alt=""></span>';
             }
             $count = '<b>'.count($output).'</b>';
             Notifications::create(['senderId' => $loggedIn, 'receiverId' => $receiverId, 'notificationTypeId' => 2,'subject' => $loggedInName , "body" => "liked your post","id"=>$postId]);
-
             return array('status' => 'Success', 'data' => 'liked successfully', 'postlikes' => $count,'image' => $artilces);
         } else {
             PostLike::where('userId', $loggedIn)->where('postId', $postId)->delete();
@@ -256,7 +245,7 @@ class PostController extends Controller
             return array('status' => 'Blank', 'data' => 'unliked successfully', 'postlikes' => $count,'image' => $artilces);
         }
     }
-    
+
     public function delete($postId){
          $post = Post::where('postId', $postId)->delete();
          $post = PostImages::where('postId', $postId)->delete();

@@ -3,6 +3,9 @@
 use App\Http\Controllers\EventsController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FCMController;
+use App\Http\Controllers\Auth\ForgotPasswordController;
+use App\Http\Controllers\HomeController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,12 +18,19 @@ use App\Http\Controllers\FCMController;
 */
 
 Route::get('/clear', function () {
-
     Artisan::call('cache:clear');
     Artisan::call('config:cache');
     Artisan::call('view:clear');
     return "Cleared!";
 });
+
+//Har
+Route::get('forget-password', [ForgotPasswordController::class, 'showForgetPasswordForm'])->name('forget.password.get');
+Route::post('forget-password', [ForgotPasswordController::class, 'submitForgetPasswordForm'])->name('forget.password.post');
+Route::get('reset-password/{token}', [ForgotPasswordController::class, 'showResetPasswordForm'])->name('reset.password.get');
+Route::post('reset-password', [ForgotPasswordController::class, 'submitResetPasswordForm'])->name('reset.password.post');
+
+
 Route::group(['namespace' => 'App\Http\Controllers'], function () {
     Route::get('/posts', 'HomeController@getPost')->name('posts');
 
@@ -57,7 +67,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
 
     Route::group(['middleware' => ['auth']], function () {
         Route::get('/dashboard', 'HomeController@getPost')->name('dashboard');
-        // Business urls 
+        // Business urls
 
         Route::get('/business-dashboard', 'HomeController@businessDashboard')->name('business-dashboard');
         Route::post('add-product', 'BusinessController@addBusinessProduct')->name('add-product');
@@ -85,7 +95,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::post('add-covid', 'HomeController@addCovid')->name('add-covid');
         Route::get('/about', 'HomeController@about')->name('about');
         Route::post('/post', 'PostController@store')->name('post.store');
-                Route::get('/like/{id}', 'PostController@postLike')->name('like');
+        Route::get('/like/{id}', 'PostController@postLike')->name('like');
 
         Route::get('/myposts', 'PostController@index')->name('myposts');
         Route::get('/post/Delete/{postId}', 'PostController@delete')->name('post.delelt');
@@ -155,8 +165,8 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::get('/my-profile', 'HomeController@myProfile')->name('my-profile');
         Route::post('saveUserProfile', 'HomeController@saveUserProfile')->name('saveUserProfile');
         Route::get('/friendProfile/{id}', 'HomeController@friendProfile')->name('friend-profile');
-        
-        
+
+
         Route::get('/orderDetail/{id}', 'OrderDetailController@index');
         Route::get('/cancel-order/{id}', 'OrderDetailController@cancelOrder');
         Route::get('/searchWeb', 'HomeController@businessSearch');
@@ -167,7 +177,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::post('SaveBussinessImage', 'BusinessController@saveBusinessImage')->name('SaveBussinessImage');
         Route::get('/places', 'BusinessController@placesSearch');
         Route::post('/placesStore', 'BusinessController@placesStore');
-        
+
         Route::get('product-detail/{pId}', 'ProductController@viewUserProduct')->name('product-detail');
         Route::get('addtocart/{pId}', 'ProductController@addToCart')->name('addtocart');
         Route::post('addtoplaylist', 'UsersController@addtoplaylist')->name('addtoplaylist');
@@ -187,7 +197,7 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::get('locationSharing', 'CMSController@locationSharing')->name('locationSharing');
         Route::get('removeLocation/{id}', 'CMSController@RemoveLocation')->name('removeLocation');
         Route::get('rewardCenter', 'CMSController@rewardCenter')->name('rewardCenter');
-        
+
         Route::get('/HapiMart', 'MarketPlaceController@index');
         Route::get('/bulletinBoard', 'BulletinBoardController@index');
         Route::post('/addbulletinBoard', 'BulletinBoardController@createBulletinBoard')->name('AddBulletinBoard');
@@ -196,42 +206,41 @@ Route::group(['namespace' => 'App\Http\Controllers'], function () {
         Route::post('/editNote/{id}', 'BulletinBoardController@editNotes')->name('EditNote');
         Route::get('/bulletinBoardDelete/{id}', 'BulletinBoardController@deleteBulletinBoard')->name('DeleteBulletinBoard');
         Route::get('/bulletinBoardView/{id}/{title}', 'BulletinBoardController@bulletinBoardView')->name('BulletinBoardView');
-        
+
         Route::get('/interest-delete/{id}', 'InterestController@deleteInterest')->name('DeleteInterest');
         Route::get('/add-interest/{interest}', 'InterestController@addInterest')->name('AddInterest');
-        
+
       Route::post('/save-token', 'App\Http\Controllers\FCMController@index');
-        
+
         Route::get('lang/home', 'LangController@index');
         Route::get('lang/change/{id}', 'LangController@change')->name('changeLang');
         Route::get('dynamicModal/{id}',['as'=>'dynamicModal','uses'=> 'ModalController@loadModal']);
         Route::get('postModal/{id}',['as'=>'postModal','uses'=> 'ModalController@loadPostModal']);
         Route::get('messageModal/{id}',['as'=>'messageModal','uses'=> 'ModalController@loadMessageModal']);
-        
-       
 
-    Route::get('/agora-chat', 'App\Http\Controllers\AgoraVideoController@index');
-    Route::get('/agora/token', 'App\Http\Controllers\AgoraVideoController@token');
-    Route::post('/agora/token', 'App\Http\Controllers\AgoraVideoController@token');
-    Route::post('/agora/call-user', 'App\Http\Controllers\AgoraVideoController@callUser');
-    
-    Route::get('/video-chat', 'App\Http\Controllers\VideoController@index');
-    Route::post('/video/call-user', 'App\Http\Controllers\VideoController@callUser');
-    Route::post('/video/accept-call', 'App\Http\Controllers\VideoController@acceptCall');
-    
-    
-    Route::post('/dashboard', 'App\Http\Controllers\FCMController@createChat')->name('create-chat');
-    Route::get('/delete-chat/{id}', 'App\Http\Controllers\FCMController@delete')->name('delete-chat');
-    Route::post('/image-search', 'SearchController@imageSearch');
 
-    Route::get('/chatgpt','ChatGPTController@index' )
-    ->name('chatgpt.index');
-Route::post('/chatgpt/ask','ChatGPTController@ask' )
-    ->name('chatgpt.ask');
-    Route::get('/log', function () {
 
-    return view("user-web.log");
-});
+        Route::get('/agora-chat', 'App\Http\Controllers\AgoraVideoController@index');
+        Route::get('/agora/token', 'App\Http\Controllers\AgoraVideoController@token');
+        Route::post('/agora/token', 'App\Http\Controllers\AgoraVideoController@token');
+        Route::post('/agora/call-user', 'App\Http\Controllers\AgoraVideoController@callUser');
+
+        Route::get('/video-chat', 'App\Http\Controllers\VideoController@index');
+        Route::post('/video/call-user', 'App\Http\Controllers\VideoController@callUser');
+        Route::post('/video/accept-call', 'App\Http\Controllers\VideoController@acceptCall');
+
+
+        Route::post('/dashboard', 'App\Http\Controllers\FCMController@createChat')->name('create-chat');
+        Route::get('/delete-chat/{id}', 'App\Http\Controllers\FCMController@delete')->name('delete-chat');
+        Route::post('/image-search', 'SearchController@imageSearch');
+
+        Route::get('/chatgpt','ChatGPTController@index' )
+        ->name('chatgpt.index');
+        Route::post('/chatgpt/ask','ChatGPTController@ask' )
+        ->name('chatgpt.ask');
+        Route::get('/log', function () {
+            return view("user-web.log");
+        });
 
     });
 });

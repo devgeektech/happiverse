@@ -127,7 +127,7 @@ use App\Models\Business;
                                 $img = $user->profileImageUrl??"";
                                 $user=MstUser::where('userId',$story->first()->userId)->first();
                                 $userName=$user->userName?? '';
-                                $userPic='http://127.0.0.1:8000/'.$img;
+                                $userPic='http://127.0.0.1:8000/'.$user->profileImageUrl;
                                 $userId=$story->first()->userId;
                             }
                             @endphp
@@ -190,7 +190,7 @@ use App\Models\Business;
                             }else{
                                 $user=MstUser::where('userId',$userId_)->first();
                                 $userName=$user->userName??'';
-                                $userPic='http://127.0.0.1:8000/';
+                                $userPic='http://127.0.0.1:8000/'.$user->profileImageUrl;
                             }
                             @endphp
                             <div class="slider-main-item {{$class}}">

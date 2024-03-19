@@ -110,39 +110,26 @@
         }
 
     });
-    APP_URL_LIKE = 'https://hapiverse.com/public/like';
+    APP_URL_LIKE = 'http://127.0.0.1:8000/like';
 
-    setTimeout(function(){
+
         $(".heart").on("click",function() {
-            console.log("ok");
-            // var postId = document.getElementsByClassName("heart").value;
-            // alert(postId);
             var btnValue = $(this).attr('value');
             var $this = $(this);
-
-
-
             $.ajax({
                 type: "GET",
                 url: APP_URL_LIKE + '/' + btnValue,
                 check : "#counts"+btnValue,
-
                 success: function(result) {
-                    // alert(result.status);
-
                     if (result.status == 'Success') {
                         $this.addClass('active');
-                        // alert('success');
                     }
                     else {
                         $this.removeClass('active');
-                        //alert('blank');
                     }
                     console.log(result);
                     console.log("#counts"+btnValue);
                     console.log("#check"+btnValue);
-
-
                     $("#counts" + btnValue).html(result["postlikes"]);
                     $("#counts" + btnValue + "model").html(result["postlikes"]);
                     $("#check" + btnValue).html(result["image"]);
@@ -150,11 +137,10 @@
                 },
                 error: function(result) {
                     console.log(result);
-
                 }
             });
         });
-}, 5000)
+
     $('.select_color').click(function(){
         $('#background_color').val($(this).attr('data-color'));
     });
